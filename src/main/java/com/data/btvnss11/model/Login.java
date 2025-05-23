@@ -1,8 +1,8 @@
 package com.data.btvnss11.model;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 public class Login {
     @NotBlank(message = "Tai khoan khong duoc de trong")

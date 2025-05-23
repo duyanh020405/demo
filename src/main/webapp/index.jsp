@@ -9,5 +9,8 @@
 <br/>
 <a href="formbt1">Bt1</a>
 <a href="formbt2">Bt2</a>
+<a href="register">Bt5</a>
+<a href="user/register2">Bt6</a>
+<a href="review">Bt7</a>
 </body>
 </html>

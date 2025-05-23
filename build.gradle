@@ -22,23 +22,24 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-  compileOnly('javax.servlet:javax.servlet-api:4.0.1')
-  implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
-
-  implementation("javax.servlet:jstl:1.2")
+  compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
 
   implementation 'org.springframework:spring-core:5.3.33'
   implementation 'org.springframework:spring-web:5.3.33'
   implementation 'org.springframework:spring-webmvc:5.3.33'
 
-  testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  implementation 'javax.validation:validation-api:2.0.1.Final'
+  implementation 'org.hibernate.validator:hibernate-validator:6.1.0.Final'
+  implementation 'org.glassfish:jakarta.el:3.0.3'
 
-  implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
-  implementation group: 'org.hibernate', name: 'hibernate-validator', version: '6.1.0.Final'
+  implementation 'javax.servlet:jstl:1.2'
+  implementation 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.2.Final'
 
 
+  testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+  testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
-useJUnitPlatform()}
+  useJUnitPlatform()
+}
